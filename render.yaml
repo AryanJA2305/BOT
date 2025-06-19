@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: GeopoliticsFIlterBot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8167248445:AAEESw7ciKNApFEHJGl7IjExUqNJ27aDqCI
+      - key: OPENAI_API_KEY
+        value: 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
